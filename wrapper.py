@@ -1,15 +1,15 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-
-
-def get_track_ids(sp, track_dictionary):
+#gets list of tracks (necessary for a lot of spotipy data analysis)
+def get_track_ids(track_dictionary):
     id_list = []
     for song in track_dictionary:
         id_list.append(song['id'])
 
     return id_list
 
+#extracts metadata + audio features (valence) using track-ids
 def metadata(sp, track_id):
     feature_dict = sp.audio_features(track_id)[0]
     valence = feature_dict['valence']
@@ -21,6 +21,7 @@ def metadata(sp, track_id):
 
     return [title, artists, valence, url, album_cover]
 
+#metadata (list_of_ids = list of track ids)
 def pre_df(sp, list_of_ids):
     song_data = []
 

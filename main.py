@@ -2,7 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
 
-from wrapper import get_track_ids, metadata, pre_df
+from wrapper import get_track_ids, pre_df
 
 #static variables 
 SPOTIPY_CLIENT_ID = '9f2aa702ed634cf2947e19f0cbdf17c7'
@@ -23,7 +23,7 @@ top_tracks = sp.current_user_top_tracks(limit = 30, offset  = 0, time_range="med
 track_items = top_tracks['items']
 
 #get list of all ids 
-all_ids = get_track_ids(sp, track_items)
+all_ids = get_track_ids(track_items)
 
 #metadata for all songs 
 song_data = pre_df(sp, all_ids)
