@@ -1,14 +1,22 @@
 from setuptools import setup, find_packages
 
 requires = [
-    'flask',
+    'requests',
     'spotipy',
     'pathlib',
-    'pandas'
+    'pandas',
+    'time',
+    'gspread',
+    'os'
+    'numpy'
+    'seaborn'
+    'matplotlib.pyplot'
 ]
+
 
 setup(
     name='moodboard',
+    version='2.0',
     author='vani sachdev',
     author_email='vsachdev@g.hmc.edu',
     keywords='web flask',
