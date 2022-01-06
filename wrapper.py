@@ -2,9 +2,7 @@ import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
 
-def hi():
-    print ("hi")
-    
+
 def get_track_ids(sp, track_dictionary):
     id_list = []
     for song in track_dictionary:
@@ -27,6 +25,6 @@ def pre_df(sp, list_of_ids):
     song_data = []
 
     for song in list_of_ids:
-        song_data.append(metadata(song))
+        song_data.append(metadata(sp, song))
 
     return song_data
