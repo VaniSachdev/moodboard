@@ -1,10 +1,9 @@
 import numpy as np 
 import seaborn as sns
 import matplotlib.pyplot as plt 
-import math 
+
 
 from analysis import song_df
-
 
 song_df_complete = song_df
 name_col = ((np.asarray(song_df_complete['title'])).reshape(10,5))

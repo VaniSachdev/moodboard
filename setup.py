@@ -5,12 +5,10 @@ requires = [
     'spotipy',
     'pathlib',
     'pandas',
-    'time',
-    'gspread',
-    'os'
-    'numpy'
-    'seaborn'
-    'matplotlib.pyplot'
+    'numpy',
+    'seaborn',
+    'matplotlib',
+    'plotly'
 ]
 
 

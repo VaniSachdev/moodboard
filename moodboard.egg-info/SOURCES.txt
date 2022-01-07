@@ -1,7 +1,0 @@
-README.md
-setup.py
-moodboard.egg-info/PKG-INFO
-moodboard.egg-info/SOURCES.txt
-moodboard.egg-info/dependency_links.txt
-moodboard.egg-info/requires.txt
-moodboard.egg-info/top_level.txt

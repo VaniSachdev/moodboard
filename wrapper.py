@@ -8,7 +8,7 @@ import math
 def get_track_ids(track_dictionary):
     id_list = []
     for song in track_dictionary:
-        id_list.append(song['id'])
+        id_list.append(song['track']['id'])
 
     return id_list
 
@@ -37,12 +37,12 @@ def pre_df(sp, list_of_ids):
     return song_data
 
 def yrows(iter):
-    return math.ceil(iter/5)
+    return math.ceil(iter/7)
 
 
 def xcols(iter):
-    col = iter % 5
+    col = iter % 7
     if col == 0:
-        col = 5
+        col = 7
 
     return col 
