@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moodboard Log-In</title>
+    <title>Moodboard </title>
     <link rel="stylesheet" href=" {{ url_for('static', filename = 'stylesheet.css') }} ">
     <link rel="stylesheet" type="text/css" href="../static/stylesheet.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,11 +12,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Sanchez&display=swap" rel="stylesheet">
 </head>
 <body>
-    <img src= "/static/media/moodboard.png" class="center">
-    <div class="center-text">
-      <button> <a href = {{ auth_url }} > LOG IN </a> </button>
+    <img src= "/static/media/1.png" class="center">
+    <div class = "container">
+        <p class = "center-text"> The aesthetic of the board was inspired by GitHub's commit logs! The darker a cell, the sadder a song is; the lighter a cell, the happier a song is. Moodboard analyzes your latest 50 songs, so you can keep checking back in to see how your board changes over time! </p>
     </div>
-   
-    <p class= "center-text red"> !!!! disclamer: the algorithm that determines the happiness metric (also known as the valence metric) is drawn from deep neural net data from spotify; i did not construct the algorithm. </p>
+    <div class="center-text">
+        <button> <a href = {{ url_for('moodboard', _external=True) }} > see my board! </a> </button>
+       
+    </div>
+    <img src= "/static/media/2.png" class="center">
 </body>
 </html>
