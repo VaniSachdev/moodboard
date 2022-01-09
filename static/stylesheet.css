@@ -14,6 +14,19 @@ body {
 }
 
 
+#container {
+    color: rgb(0, 0, 0); 
+    font-family: 'Sanchez', serif;
+    background-color: white;
+    width: 80%;
+    margin-top: 5%;
+    padding: 2%;
+
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+ }
   
 .center {
     display: flex;
@@ -24,15 +37,13 @@ body {
 
 
 
-
-
 button {
     font-family: 'Sanchez', serif;
     color: black;
     background-color: #DCEBC4;
     border: 2px solid black;
     padding: 15px 32px;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -62,17 +73,3 @@ a:hover
     text-decoration: none;
     color: white; 
 }
-
-#container {
-    color: rgb(0, 0, 0); 
-    font-family: 'Sanchez', serif;
-    background-color: white;
-    width: 80%;
-    margin-top: 5%;
-    padding: 2%;
-
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 1%;
- }
