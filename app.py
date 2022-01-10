@@ -31,3 +31,6 @@ def create_spotify_oauth():
             client_secret=SPOTIPY_CLIENT_SECRET,
             redirect_uri=url_for('redirect_page', _external=True),
             scope="user-library-read") 
+
+if __name__ == '__main__':
+    app.run(host="0.0.0.0")
