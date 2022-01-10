@@ -7,7 +7,7 @@ from wrapper import get_track_ids, pre_df
 #static variables 
 SPOTIPY_CLIENT_ID = '9f2aa702ed634cf2947e19f0cbdf17c7'
 SPOTIPY_CLIENT_SECRET = '5f123052c4c046e6ba409f93223263e1'
-SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:5000/moodboard.html'
+SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:5000'
 SCOPE = "user-read-recently-played"
 DF_COLUMNS  = ["title", "artists", "valence", "spotify url", "album_cover url", "yrows", "xcols"]
 
