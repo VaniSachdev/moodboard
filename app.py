@@ -3,10 +3,12 @@ from matplotlib.pyplot import plot
 from analysis import SPOTIPY_CLIENT_SECRET, SPOTIPY_CLIENT_ID
 from spotipy.oauth2 import SpotifyOAuth
 from plot import plot_graph 
+import os 
 
 app = Flask(__name__)
-# app.secret_key = "bruhidkforrn"
-# app.config['SESSION_COOKIE_NAME'] = 'Vanis Cookie'
+
+app.secret_key = "bruhidkforrn"
+app.config['SESSION_COOKIE_NAME'] = 'cookie'
 
 @app.route('/')
 def login():
@@ -19,6 +21,11 @@ def login():
 @app.route('/redirect')
 def redirect_page():
     plot_graph() 
+    sp_oauth = create_spotify_oauth()
+    session.clear()
+    code = request.args.get('code')
+    token_info = sp_oauth.get_access_token(code)
+    session["token_info"] = token_info
     return render_template("explain.html")
 
 @app.route('/moodboard')
@@ -34,3 +41,5 @@ def create_spotify_oauth():
 
 if __name__ == '__main__':
     app.run(host="0.0.0.0")
+
+
