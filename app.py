@@ -12,6 +12,10 @@ app.config['SESSION_COOKIE_NAME'] = 'cookie'
 
 @app.route('/')
 def login():
+    try:
+        os.remove(".cache")
+    except:
+        pass 
     picture_link = "/static/media/moodboard.png"
     spot_oauth = create_spotify_oauth()
     auth_url = spot_oauth.get_authorize_url()
@@ -31,6 +35,15 @@ def redirect_page():
 @app.route('/moodboard')
 def moodboard():
     return render_template("moodboard.html")
+
+
+@app.route('/logout')
+def logout():
+    os.remove(".cache")
+    for key in list(session.keys()):
+        session.pop(key)
+    return redirect('/')
+
 
 def create_spotify_oauth():
     return SpotifyOAuth(
