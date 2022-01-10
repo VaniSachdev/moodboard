@@ -1,0 +1,8 @@
+requests
+spotipy
+pathlib
+pandas
+numpy
+seaborn
+matplotlib
+plotly

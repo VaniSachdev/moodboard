@@ -1,0 +1,5 @@
+
+[doc]
+reno
+sphinx
+tornado>=4.5
