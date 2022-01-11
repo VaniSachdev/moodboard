@@ -3,6 +3,7 @@ from matplotlib.pyplot import plot
 from analysis import SPOTIPY_CLIENT_SECRET, SPOTIPY_CLIENT_ID
 from spotipy.oauth2 import SpotifyOAuth
 from plot import plot_graph 
+import os 
 
 app = Flask(__name__)
 # app.secret_key = "bruhidkforrn"
@@ -10,6 +11,10 @@ app = Flask(__name__)
 
 @app.route('/')
 def login():
+    try:
+        os.remove(".cache")
+    except:
+        pass
     picture_link = "/static/media/moodboard.png"
     spot_oauth = create_spotify_oauth()
     auth_url = spot_oauth.get_authorize_url()
