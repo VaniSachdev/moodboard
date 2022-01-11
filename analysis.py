@@ -1,13 +1,12 @@
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 import pandas as pd
-
 from wrapper import get_track_ids, pre_df
 
 #static variables 
 SPOTIPY_CLIENT_ID = '9f2aa702ed634cf2947e19f0cbdf17c7'
 SPOTIPY_CLIENT_SECRET = '5f123052c4c046e6ba409f93223263e1'
-SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:5000'
+SPOTIPY_REDIRECT_URI = 'http://127.0.0.1:5000/moodboard.html'
 SCOPE = "user-read-recently-played"
 DF_COLUMNS  = ["title", "artists", "valence", "spotify url", "album_cover url", "yrows", "xcols"]
 
@@ -44,7 +43,6 @@ song_df = pd.DataFrame(song_data, columns = DF_COLUMNS)
 # min_valence =  song_df.loc[song_df['valence'].idxmin()]
 # max_valence =  song_df.loc[song_df['valence'].idxmax()]
 # average_valence = round(song_df['valence'].mean(), 2)
-
 
 
 
