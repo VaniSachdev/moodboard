@@ -16,10 +16,14 @@
     <div id = "container">
         <p class = "center-text"> The aesthetic of the board was inspired by GitHub's commit logs! The darker a cell, the more negative (sad, depressed, angry) a song is; the lighter a cell, the more positive (happy, cheerful, euphoric) a song is. Moodboard analyzes your latest 50 songs, so you can keep checking back in to see how your board changes over time! </p>
     </div>
+
     <div class="center-text">
         <button> <a href = {{ url_for('moodboard', _external=True) }} > see your board! </a> </button>
         
     </div>
+
+    <p class = "center-text red"> IF YOU HAVENT REACHED OUT TO HAVE PERMISSION TO VIEW THE APP (EVEN THOUGH YOU LOGGED IN), YOU WILL SEE AN EXAMPLE I RAN WITH MY DATA (The Spotify API requires explicit permission from the developer's end for apps that aren't made with production intent)</p>  
+
     <img src= "/static/media/2.1.png" class="center">
 </body>
 </html>
