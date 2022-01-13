@@ -15,4 +15,4 @@ Please note that since this project's design is not intended for production, eve
 5.  Run your flask application by typing in  `flask run` in the terminal & view your results!
 
 **On the Web!**
-6. Email me: vsachdev@g.hmc.edu 
+Email me: vsachdev@g.hmc.edu 
