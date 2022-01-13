@@ -12,7 +12,7 @@ Please note that since this project's design is not intended for production, eve
 2. Go to your [Spotify Dashboard](https://developer.spotify.com/dashboard/) & create a new project.
 3. Copy/paste the Client ID + Secret ID into analysis.py.
 4. Add your desired redirect URI (any link will do) to both the URI section of your Spotify project & to analysis.py. 
-5.  Run your flask application on your  `flask run` & view your results!
+5.  Run your flask application by typing in  `flask run` in the terminal & view your results!
 
 **On the Web!**
 6. Email me: vsachdev@g.hmc.edu 
