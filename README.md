@@ -2,7 +2,7 @@
 
 Moodboard is inspired by the heat-wave style maps Github uses to visualize a user's commits. It is a Flask application that uses the Spotify API and extracts metadata from a user's current music history to visualize their current mood. Specifically, I graphed the valence, which is audio feature data that measures how happy/sad a song is. (By design, this metric is quite subjective, but I thought it would be fun to visualize how a user's mood changes (or at least their song-choice) over time.)
 
-Please note that since this project's design is not intended for production, even though the website requires a Spotify sign-in, if the developer (aka me) has not explicitly given your permission on Spotify's developer website. Thus, you will see an example moodboard from my data. 
+Please note that since this project's design is not intended for production, even though the website requires a Spotify sign-in, if the developer (aka me) has not explicitly given your account permission on Spotify's developer website I do not have permission to access your data. Thus, you will see an example moodboard from my data. 
 
 
 ## Requirements
